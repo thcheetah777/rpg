@@ -6,8 +6,8 @@ from classes.Input import Input
 from traits.go import goTrait
 
 class Player(EntityBase):
-    def __init__(self, speed, screen):
-        super(Player, self).__init__()
+    def __init__(self, speed, screen, x, y):
+        super(Player, self).__init__(x, y)
         self.input = Input(self)
         self.screen = screen
         self.speed = speed
