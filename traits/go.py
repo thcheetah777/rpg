@@ -8,7 +8,14 @@ class goTrait(object):
         self.ent = ent
 
     def update(self):
-        move(self.speed)
+        self.move()
 
-    def move(self, speed):
-        self.ent.rect.x += speed
+    def move(self):
+        if self.dir == 0:
+            self.ent.rect[0] += -self.speed
+        elif self.dir == 1:
+            self.ent.rect[0] += self.speed
+        elif self.dir == 2:
+            self.ent.rect[1] += -self.speed
+        elif self.dir == 3:
+            self.ent.rect[1] += self.speed
