@@ -1,4 +1,6 @@
 import pygame
 
 class EntityBase(object)
-    pass
+    def __init__(self):
+        self.type = ""
+        self.alive = True
