@@ -13,3 +13,7 @@ class Player(EntityBase):
         self.traits = {
             "goTrait": goTrait(self.screen, self)
         }
+
+    def update(self):
+        self.input.checkForInput()
+        self.moveMario()
