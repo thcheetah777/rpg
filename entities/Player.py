@@ -7,4 +7,9 @@ from classes.Input import Input
 class Player(EntityBase):
     def __init__(self, speed, screen):
         super(Player, self).__init__()
-        
+        self.input = Input(self)
+        self.screen = screen
+        self.speed = speed
+        self.traits = {
+            "goTrait": goTrait(self.screen, self)
+        }
