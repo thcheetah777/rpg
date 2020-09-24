@@ -15,7 +15,7 @@ This is my first RPG in python, made using Pygame
 * Down: Move down
 
 ## Current state:
-Sorry, this game is not finished
+![Alt text](imgs/screenshot1.png)
 
 ## Dependencies
 * Pygame
