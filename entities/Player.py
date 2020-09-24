@@ -16,4 +16,4 @@ class Player(EntityBase):
 
     def update(self):
         self.input.checkForInput()
-        self.moveMario()
+        self.movePlayer()
