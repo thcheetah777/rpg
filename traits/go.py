@@ -8,7 +8,7 @@ class goTrait(object):
         self.ent = ent
 
     def update(self):
-        move(ent)
+        move(self.speed)
 
     def move(self, speed):
         self.ent.rect.x += speed
