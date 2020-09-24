@@ -16,4 +16,3 @@ class Player(EntityBase):
 
     def update(self):
         self.input.checkForInput()
-        self.movePlayer()
