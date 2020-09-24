@@ -3,6 +3,7 @@ import sys
 sys.path.append('../')
 from entities.EntityBase import EntityBase
 from classes.Input import Input
+from traits.go import goTrait
 
 class Player(EntityBase):
     def __init__(self, speed, screen):
