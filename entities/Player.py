@@ -16,3 +16,7 @@ class Player(EntityBase):
 
     def update(self):
         self.input.checkForInput()
+        self.draw()
+
+    def draw(self):
+        pygame.draw.circle(self.screen, pygame.color.Color("#8080FF"), [int(self.rect[0]), int(self.rect[1])], 6)
