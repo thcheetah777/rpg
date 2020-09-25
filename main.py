@@ -27,7 +27,7 @@ def main():
     sound.playMusic(sound.soundtrack)
     object = Object(screen, windowSize[0] // 2, windowSize[1] // 2, "#e00000")
     player = Player(2, screen, windowSize[0] // 2, windowSize[1] // 2)
-    background = Background(screen, windowSize[0] // -5, windowSize[1] // -5)
+    background = Background(screen, -windowSize[0], -windowSize[1])
 
     # Play soundtrack in sound class
     sound.playMusic(sound.soundtrack)
