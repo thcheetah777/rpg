@@ -12,7 +12,7 @@ class Player(EntityBase):
         self.screen = screen
         self.speed = speed
         self.traits = {
-            "goTrait": goTrait(self.screen, self)
+            "goTrait": goTrait(self.screen, self, self.speed)
         }
 
     def update(self):
