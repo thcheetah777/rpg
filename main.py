@@ -1,4 +1,5 @@
 import pygame
+from classes.Sound import Sound
 from entities.Player import Player
 from entities.Object import Object
 from entities.Background import Background
@@ -8,6 +9,8 @@ def main():
     keep_going = True
     timer = pygame.time.Clock()
     screen = pygame.display.set_mode(windowSize)
+    sound = Sound()
+    sound.playMusic(sound.soundtrack)
     object = Object(screen, windowSize[0] // 2, windowSize[1] // 2, "#e00000")
     player = Player(2, screen, windowSize[0] // 2, windowSize[1] // 2)
     background = Background(screen, windowSize[0] // -5, windowSize[1] // -5)
