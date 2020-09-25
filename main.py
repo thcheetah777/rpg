@@ -9,7 +9,7 @@ object = Object(screen, windowSize[0] // 2, windowSize[1] // 2)
 def main():
     keep_going = True
     while keep_going:
-        screen.fill(pygame.color.Color("#ffffff"))
+        screen.fill(pygame.color.Color("#00e64d"))
         player.update()
         object.update()
         pygame.display.flip()
