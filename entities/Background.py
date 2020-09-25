@@ -5,12 +5,12 @@ from entities.EntityBase import EntityBase
 from classes.Input import Input
 from traits.go import goTrait
 
-class Object(EntityBase):
-    def __init__(self, screen, x, y, color):
-        super(Object, self).__init__(x, y)
+class Background(EntityBase):
+    def __init__(self, screen, x, y):
+        super(Background, self).__init__(x, y)
         self.input = Input(self)
+        self.img = pygame.transform.rotozoom(pygame.image.load("imgs\grass2.png"), 0, 10)
         self.screen = screen
-        self.color = color
         self.speed = 0
         self.traits = {
             "goTrait": goTrait(self.screen, self, self.speed)
@@ -22,4 +22,4 @@ class Object(EntityBase):
         self.draw()
 
     def draw(self):
-        pygame.draw.circle(self.screen, pygame.color.Color(self.color), [int(self.rect[0]), int(self.rect[1])], 12)
+        self.screen.blit(self.img, (self.rect[0], self.rect[1]))
