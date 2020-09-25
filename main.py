@@ -8,9 +8,9 @@ def main():
     keep_going = True
     timer = pygame.time.Clock()
     screen = pygame.display.set_mode(windowSize)
-    object = Object(screen, windowSize[0] // 1.5, windowSize[1] // 1.5, "red")
+    object = Object(screen, windowSize[0] // 2, windowSize[1] // 2, "#e00000")
     player = Player(2, screen, windowSize[0] // 2, windowSize[1] // 2)
-    background = Background(screen, windowSize[0] // 3, windowSize[1] // 3)
+    background = Background(screen, windowSize[0] // -5, windowSize[1] // -5)
     while keep_going:
         screen.fill("#4287f5")
         background.update()
