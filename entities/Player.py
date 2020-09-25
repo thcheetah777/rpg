@@ -22,4 +22,3 @@ class Player(EntityBase):
 
     def draw(self):
         pygame.draw.circle(self.screen, pygame.color.Color("#8080FF"), [int(self.rect[0]), int(self.rect[1])], 12)
-        pygame.display.flip()

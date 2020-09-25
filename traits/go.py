@@ -12,10 +12,10 @@ class goTrait(object):
 
     def move(self):
         if self.dir == 0:
-            self.ent.rect[0] += -self.speed - -self.speed
+            self.ent.rect[0] += -self.speed - -0.3
         elif self.dir == 1:
-            self.ent.rect[0] += self.speed - self.speed
+            self.ent.rect[0] += self.speed - 0.3
         elif self.dir == 2:
-            self.ent.rect[1] += -self.speed - -self.speed
+            self.ent.rect[1] += -self.speed - -0.3
         elif self.dir == 3:
-            self.ent.rect[1] += self.speed - self.speed
+            self.ent.rect[1] += self.speed - 0.3
