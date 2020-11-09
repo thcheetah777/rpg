@@ -16,7 +16,7 @@ class Sound:
         self.musicChannel.set_volume(0.5)
 
         # File path
-        self.soundtrack = pygame.mixer.Sound("./sfx/main.mp3")
+        self.soundtrack = pygame.mixer.Sound("./sfx/overworld.ogg")
 
     # PlayMusic method
     def playMusic(self, music):
